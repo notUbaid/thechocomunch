@@ -61,7 +61,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Premium brand colors
+				chocolate: {
+					dark: 'hsl(var(--chocolate-dark))',
+					medium: 'hsl(var(--chocolate-medium))',
+					light: 'hsl(var(--chocolate-light))'
+				},
+				cream: 'hsl(var(--cream))',
+				vanilla: 'hsl(var(--vanilla))',
+				'pink-soft': 'hsl(var(--pink-soft))',
+				'mint-soft': 'hsl(var(--mint-soft))'
+			},
+			fontFamily: {
+				script: ['Dancing Script', 'cursive'],
+				poppins: ['Poppins', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-cream': 'var(--gradient-cream)',
+				'gradient-accent': 'var(--gradient-accent)'
+			},
+			boxShadow: {
+				luxury: 'var(--shadow-luxury)',
+				soft: 'var(--shadow-soft)',
+				glow: 'var(--shadow-glow)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +108,53 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(30px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'slide-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(50px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.9)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.8s ease-out forwards',
+				'slide-up': 'slide-up 0.8s ease-out forwards',
+				'scale-in': 'scale-in 0.6s ease-out forwards',
+				'float': 'float 3s ease-in-out infinite'
 			}
 		}
 	},
