@@ -96,65 +96,6 @@ const WorkshopsSection = () => {
           </div>
         </div>
 
-        {/* Workshop Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {workshops.map((workshop, index) => (
-            <div 
-              key={workshop.title}
-              className={`card-luxury transition-all duration-1000 ${
-                isVisible ? 'animate-scale-in' : 'opacity-0'
-              }`}
-              style={{ animationDelay: `${0.4 + index * 0.2}s` }}
-            >
-              <div className="mb-6">
-                <ChefHat className="w-12 h-12 text-chocolate-medium mb-4" />
-                <h3 className="font-script text-2xl font-bold text-chocolate-dark mb-3">
-                  {workshop.title}
-                </h3>
-                <p className="text-chocolate-medium font-poppins mb-4">
-                  {workshop.description}
-                </p>
-              </div>
-
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center text-chocolate-light">
-                  <Clock className="w-4 h-4 mr-2" />
-                  <span className="text-sm font-poppins">{workshop.duration}</span>
-                </div>
-                <div className="flex items-center text-chocolate-light">
-                  <Users className="w-4 h-4 mr-2" />
-                  <span className="text-sm font-poppins">{workshop.capacity}</span>
-                </div>
-              </div>
-
-              <div className="mb-6">
-                <h4 className="font-semibold text-chocolate-dark mb-3 font-poppins">What you'll learn:</h4>
-                <ul className="space-y-1">
-                  {workshop.features.map((feature) => (
-                    <li key={feature} className="text-sm text-chocolate-medium font-poppins flex items-center">
-                      <span className="w-1.5 h-1.5 bg-chocolate-medium rounded-full mr-2"></span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="border-t border-border pt-4">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-bold text-chocolate-dark font-poppins">
-                    {workshop.price}
-                  </span>
-                </div>
-                <button
-                  onClick={() => openWhatsApp(`Hi! I'd like to join the ${workshop.title} workshop.`)}
-                  className="w-full btn-cream text-center"
-                >
-                  Book This Workshop
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
 
         {/* Workshop Image */}
         <div className={`mt-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{ animationDelay: '1s' }}>

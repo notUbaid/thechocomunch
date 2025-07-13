@@ -217,10 +217,17 @@ const ContactSection = () => {
             <h4 className="font-script text-2xl font-bold text-chocolate-dark mb-3">
               Visit Our Kitchen
             </h4>
-            <p className="text-chocolate-medium font-poppins">
-              Home-based premium bakery in Mumbai<br />
+            <p className="text-chocolate-medium font-poppins mb-4">
+              Home-based premium bakery in Surat, Gujarat<br />
               (Exact address shared upon booking)
             </p>
+            <button
+              onClick={() => window.open('https://maps.google.com/maps?q=Surat,+Gujarat,+India', '_blank')}
+              className="btn-cream inline-flex items-center gap-2"
+            >
+              <MapPin className="w-4 h-4" />
+              View on Google Maps
+            </button>
           </div>
         </div>
       </div>

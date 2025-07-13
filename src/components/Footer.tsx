@@ -85,13 +85,16 @@ const Footer = () => {
           <div>
             <h4 className="font-poppins font-semibold text-lg mb-6">Get in Touch</h4>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
+              <button 
+                onClick={() => window.open('https://maps.google.com/maps?q=Surat,+Gujarat,+India', '_blank')}
+                className="flex items-start space-x-3 hover:text-cream transition-colors duration-300"
+              >
                 <MapPin className="w-5 h-5 text-cream/80 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-cream/80 font-poppins text-sm">Mumbai, India</p>
-                  <p className="text-cream/60 font-poppins text-xs">(Address shared upon booking)</p>
+                  <p className="text-cream/80 font-poppins text-sm">Surat, Gujarat, India</p>
+                  <p className="text-cream/60 font-poppins text-xs">(Click to view on Google Maps)</p>
                 </div>
-              </div>
+              </button>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cream/80 flex-shrink-0" />
