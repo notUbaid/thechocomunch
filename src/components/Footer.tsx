@@ -11,7 +11,7 @@ const Footer = () => {
   };
 
   const openWhatsApp = () => {
-    const phoneNumber = "+911234567890"; // Replace with actual number
+    const phoneNumber = "+919033775880";
     const message = "Hi! I'd love to know more about The Choco Munch.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
@@ -86,27 +86,27 @@ const Footer = () => {
             <h4 className="font-poppins font-semibold text-lg mb-6">Get in Touch</h4>
             <div className="space-y-4">
               <button 
-                onClick={() => window.open('https://maps.google.com/maps?q=Surat,+Gujarat,+India', '_blank')}
+                onClick={() => window.open('https://maps.google.com/maps?q=Royal+Heritage,+Surat,+Gujarat,+India', '_blank')}
                 className="flex items-start space-x-3 hover:text-cream transition-colors duration-300"
               >
                 <MapPin className="w-5 h-5 text-cream/80 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-cream/80 font-poppins text-sm">Surat, Gujarat, India</p>
+                  <p className="text-cream/80 font-poppins text-sm">Royal Heritage, Surat</p>
                   <p className="text-cream/60 font-poppins text-xs">(Click to view on Google Maps)</p>
                 </div>
               </button>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cream/80 flex-shrink-0" />
-                <a href="tel:+911234567890" className="text-cream/80 hover:text-cream transition-colors duration-300 font-poppins text-sm">
-                  +91 12345 67890
+                <a href="tel:+919033775880" className="text-cream/80 hover:text-cream transition-colors duration-300 font-poppins text-sm">
+                  +91 90337 75880
                 </a>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-cream/80 flex-shrink-0" />
-                <a href="mailto:kehkashan@chocomunch.in" className="text-cream/80 hover:text-cream transition-colors duration-300 font-poppins text-sm">
-                  kehkashan@chocomunch.in
+                <a href="mailto:thechocomunch@gmail.com" className="text-cream/80 hover:text-cream transition-colors duration-300 font-poppins text-sm">
+                  thechocomunch@gmail.com
                 </a>
               </div>
             </div>

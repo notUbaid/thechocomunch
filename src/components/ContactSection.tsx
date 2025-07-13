@@ -30,7 +30,7 @@ const ContactSection = () => {
   }, []);
 
   const openWhatsApp = (customMessage?: string) => {
-    const phoneNumber = "+911234567890"; // Replace with actual number
+    const phoneNumber = "+919033775880";
     const message = customMessage || "Hi! I'd love to join your baking class.";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
@@ -61,15 +61,15 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Call Us",
-      description: "+91 12345 67890",
-      action: () => window.open("tel:+911234567890"),
+      description: "+91 90337 75880",
+      action: () => window.open("tel:+919033775880"),
       color: "bg-blue-500"
     },
     {
       icon: Mail,
       title: "Email",
-      description: "kehkashan@chocomunch.in",
-      action: () => window.open("mailto:kehkashan@chocomunch.in"),
+      description: "thechocomunch@gmail.com",
+      action: () => window.open("mailto:thechocomunch@gmail.com"),
       color: "bg-purple-500"
     }
   ];
@@ -135,7 +135,7 @@ const ContactSection = () => {
               (Exact address shared upon booking)
             </p>
             <button
-              onClick={() => window.open('https://maps.google.com/maps?q=Surat,+Gujarat,+India', '_blank')}
+              onClick={() => window.open('https://maps.google.com/maps?q=Royal+Heritage,+Surat,+Gujarat,+India', '_blank')}
               className="btn-cream inline-flex items-center gap-2"
             >
               <MapPin className="w-4 h-4" />
