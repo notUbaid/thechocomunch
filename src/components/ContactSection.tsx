@@ -88,15 +88,15 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="max-w-3xl mx-auto">
           {/* Contact Options */}
           <div className={`transition-all duration-1000 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
-            <h3 className="font-script text-3xl font-bold text-chocolate-dark mb-8">
+            <h3 className="font-script text-3xl font-bold text-chocolate-dark mb-8 text-center">
               Get in Touch
             </h3>
             
             {/* Quick Contact Options */}
-            <div className="space-y-6 mb-8">
+            <div className="space-y-6">
               {contactOptions.map((option, index) => (
                 <div 
                   key={option.title}
@@ -120,93 +120,6 @@ const ContactSection = () => {
                 </div>
               ))}
             </div>
-
-            {/* WhatsApp CTA */}
-            <div className="card-luxury bg-gradient-accent text-center">
-              <MessageCircle className="w-16 h-16 text-chocolate-medium mx-auto mb-4" />
-              <h4 className="font-script text-2xl font-bold text-chocolate-dark mb-3">
-                Prefer WhatsApp?
-              </h4>
-              <p className="text-chocolate-medium font-poppins mb-6">
-                Get instant responses to your queries and book your spot directly!
-              </p>
-              <button
-                onClick={() => openWhatsApp()}
-                className="btn-luxury w-full"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                Start WhatsApp Chat
-              </button>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className={`card-luxury transition-all duration-1000 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
-            <h3 className="font-script text-3xl font-bold text-chocolate-dark mb-6">
-              Send us a Message
-            </h3>
-            
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-chocolate-dark font-poppins font-medium mb-2">
-                  Your Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-chocolate-medium focus:ring-2 focus:ring-chocolate-medium/20 transition-colors duration-300 font-poppins"
-                  placeholder="Enter your full name"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-chocolate-dark font-poppins font-medium mb-2">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-chocolate-medium focus:ring-2 focus:ring-chocolate-medium/20 transition-colors duration-300 font-poppins"
-                  placeholder="+91 12345 67890"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-chocolate-dark font-poppins font-medium mb-2">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  required
-                  rows={5}
-                  className="w-full px-4 py-3 rounded-xl border border-border bg-background/50 focus:border-chocolate-medium focus:ring-2 focus:ring-chocolate-medium/20 transition-colors duration-300 font-poppins resize-none"
-                  placeholder="Tell us about your baking interests, what you'd like to learn, or any specific requirements for custom orders..."
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="btn-luxury w-full"
-              >
-                <Send className="w-5 h-5 mr-2" />
-                Send via WhatsApp
-              </button>
-            </form>
-
-            <p className="text-chocolate-medium font-poppins text-sm text-center mt-4">
-              * This form will send your message via WhatsApp for faster response
-            </p>
           </div>
         </div>
 
