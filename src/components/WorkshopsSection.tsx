@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Calendar, Clock, Users, ChefHat } from 'lucide-react';
-import workshopImage from '../assets/workshop-scene.jpg';
+import workshopImage from '../assets/workshop-scene-1.jpeg';
 
 const WorkshopsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +26,7 @@ const WorkshopsSection = () => {
   }, []);
 
   const openWhatsApp = (message: string) => {
-    const phoneNumber = "1234567890"; // Replace with actual number
+    const phoneNumber = "+919033775880"; // Replace with actual number
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
   };
@@ -78,17 +78,17 @@ const WorkshopsSection = () => {
             <div className="flex items-center justify-center mb-4">
               <Calendar className="w-8 h-8 text-chocolate-dark mr-3" />
               <h3 className="font-script text-3xl font-bold text-chocolate-dark">
-                Special 4-Day Workshop
+                Special 1-Day Workshop
               </h3>
             </div>
             <p className="text-lg font-poppins text-chocolate-medium mb-4">
-              <span className="font-bold">15–16 May & 19–20 May 2025</span>
+              <span className="font-bold">16 July 2025</span>
             </p>
             <p className="text-chocolate-dark font-poppins mb-6">
-              Comprehensive baking bootcamp covering cookies, cakes, bread, and advanced decorating techniques.
+              Join a hands-on workshop to master sandwich breads, buns, pizza bases, loaves, croissants, and more!
             </p>
             <button
-              onClick={() => openWhatsApp("Hi! I'm interested in the 4-day workshop from May 15-20, 2025.")}
+              onClick={() => openWhatsApp("Hi! I'm interested in the 1-day workshop on 16 July, 2025.")}
               className="btn-luxury"
             >
               Reserve Your Spot

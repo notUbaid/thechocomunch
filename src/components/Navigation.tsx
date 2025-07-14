@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/thechocomunch-logo.png';
+
+
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,11 +42,13 @@ const Navigation = () => {
     }`}>
       <div className="container-max">
         <div className="flex items-center justify-between py-4">
-          {/* Logo */}
+          {/* logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-full flex items-center justify-center">
-              <span className="text-cream font-script text-xl font-bold">C</span>
-            </div>
+            <img
+              src={logo}
+              alt="The Choco Munch Logo"
+              className="w-12 h-12 rounded-full"
+              />
             <div>
               <h1 className="font-script text-2xl font-bold text-chocolate-dark">
                 The Choco Munch

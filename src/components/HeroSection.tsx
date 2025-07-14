@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
-import heroImage from '../assets/hero-bakery-spread.jpg';
+import heroImage from '../assets/hero-bakery-spread.jpg'; // Replace with actual hero image path
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,7 +17,7 @@ const HeroSection = () => {
   };
 
   const openWhatsApp = (message: string) => {
-    const phoneNumber = "1234567890"; // Replace with actual number
+    const phoneNumber = "+919033775880"; // Replace with actual number
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
   };

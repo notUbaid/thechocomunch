@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Award, Heart, Shield, Star } from 'lucide-react';
-import kehkashanPortrait from '../assets/kehkashan-portrait.jpg';
+import kehkashanPortrait from '../assets/kehkashan-portrait.jpeg';
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +29,7 @@ const AboutSection = () => {
     {
       icon: Star,
       title: "Premium Ingredients",
-      description: "Only the finest quality ingredients like Amul & Morde"
+      description: "Crafted with care, quality, and expert guidance from me"
     },
     {
       icon: Shield,

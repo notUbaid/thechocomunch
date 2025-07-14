@@ -26,19 +26,19 @@ const TestimonialsSection = () => {
 
   const testimonials = [
     {
-      name: "Priya Sharma",
+      name: "Zainab Khan",
       text: "This was the most fun I've had in a baking class. Kehkashan's teaching style is amazing, and the brownies? Absolutely incredible! I learned so much in just one session.",
       rating: 5,
       course: "Cookie Masterclass"
     },
     {
-      name: "Arjun Patel",
+      name: "Fatima Ali",
       text: "The custom cake for my daughter's birthday was beyond our expectations. Beautiful design, amazing taste, and delivered exactly on time. Highly recommended!",
       rating: 5,
       course: "Custom Cake Order"
     },
     {
-      name: "Meera Gupta",
+      name: "Mariam Saiyed",
       text: "I've attended three workshops now, and each one has been a delightful learning experience. The quality of ingredients and attention to hygiene is impressive.",
       rating: 5,
       course: "Bread Basics & Cupcake Decorating"

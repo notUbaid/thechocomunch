@@ -1,4 +1,6 @@
 import { Heart, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import logo from '../assets/thechocomunch-logo.png';
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -34,9 +36,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-cream rounded-full flex items-center justify-center">
-                <span className="text-chocolate-dark font-script text-2xl font-bold">C</span>
-              </div>
+              <img 
+               src={logo} 
+               alt="The Choco Munch Logo" 
+               className="w-12 h-12 object-contain"
+              />
               <div>
                 <h3 className="font-script text-3xl font-bold">The Choco Munch</h3>
                 <p className="text-cream/80 font-poppins text-sm">Whisked with Passion, Baked with Heart</p>
@@ -50,7 +54,7 @@ const Footer = () => {
 
             <div className="flex items-center space-x-4">
               <button
-                onClick={() => window.open('https://instagram.com/thecocomunch', '_blank')}
+                onClick={() => window.open('https://instagram.com/thechocomunch', '_blank')}
                 className="w-10 h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
               >
                 <Instagram className="w-5 h-5" />
@@ -133,7 +137,7 @@ const Footer = () => {
               <Heart className="w-4 h-4 fill-pink-soft text-pink-soft animate-pulse" />
               <span>by</span>
               <a 
-                href="https://linkedin.com/in/ubaidkhan" 
+                href="https://linkedin.com/in/notubaid" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-cream hover:text-vanilla transition-colors duration-300 font-medium"

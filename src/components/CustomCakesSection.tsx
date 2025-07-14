@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { Heart, Star, Award, MessageCircle } from 'lucide-react';
-import customCake1 from '../assets/custom-cake-1.jpg';
-import customCake2 from '../assets/custom-cake-2.jpg';
-import customCake3 from '../assets/custom-cake-3.jpg';
+import customCake1 from '../assets/custom-cake-1.jpeg';
+import customCake2 from '../assets/custom-cake-2.jpeg';
+import customCake3 from '../assets/custom-cupcake-1.jpeg';
 
 const CustomCakesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +28,7 @@ const CustomCakesSection = () => {
   }, []);
 
   const openWhatsApp = () => {
-    const phoneNumber = "1234567890"; // Replace with actual number
+    const phoneNumber = "+919033775880"; // Replace with actual number
     const message = "Hi! I'd like to inquire about ordering a custom cake. Can you please share more details about pricing and availability?";
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
@@ -49,7 +49,7 @@ const CustomCakesSection = () => {
     {
       icon: Star,
       title: "Premium Quality",
-      description: "Using only high-quality products like Amul & Morde"
+      description: "Finest quality ingredients and expert techniques"
     },
     {
       icon: Award,
@@ -69,8 +69,7 @@ const CustomCakesSection = () => {
           <div className="max-w-3xl mx-auto">
             <p className="text-xl text-chocolate-medium font-poppins leading-relaxed mb-6">
               We take limited custom cake orders each week — made with love, 
-              handled with care, and crafted using only high-quality products 
-              like Amul & Morde.
+              handled with care, and crafted using only the finest quality ingredients and expert techniques.
             </p>
             <p className="text-lg text-chocolate-light font-poppins">
               Each cake tells a story and celebrates your special moments with flavors 
@@ -112,13 +111,13 @@ const CustomCakesSection = () => {
               }`}
               style={{ animationDelay: `${0.6 + index * 0.2}s` }}
             >
-              <div className="relative group overflow-hidden rounded-3xl shadow-luxury hover-lift">
+              <div className="relative group aspect-square overflow-hidden rounded-3xl shadow-luxury hover-lift">
                 <img 
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
               </div>
             </div>
           ))}
