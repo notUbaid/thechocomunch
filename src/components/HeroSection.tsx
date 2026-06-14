@@ -40,7 +40,7 @@ const HeroSection = () => {
         <div className={`transition-all duration-1000 max-w-2xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="flex items-center space-x-4 mb-6">
             <div className="h-[1px] w-12 bg-accent"></div>
-            <span className="text-accent uppercase tracking-[0.2em] text-sm font-semibold">Premium Bakery</span>
+            <span className="text-accent uppercase tracking-[0.2em] text-sm font-semibold">Home Bakery</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 leading-[1.1] tracking-tight">
