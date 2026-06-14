@@ -54,12 +54,14 @@ const Footer = () => {
 
             <div className="flex items-center space-x-4">
               <button
+                aria-label="Visit our Instagram page"
                 onClick={() => window.open('https://instagram.com/thechocomunch', '_blank')}
                 className="w-10 h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
               >
                 <Instagram className="w-5 h-5" />
               </button>
               <button
+                aria-label="Contact us on WhatsApp"
                 onClick={openWhatsApp}
                 className="w-10 h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
               >
@@ -90,6 +92,7 @@ const Footer = () => {
             <h4 className="font-poppins font-semibold text-lg mb-6">Get in Touch</h4>
             <div className="space-y-4">
               <button 
+                aria-label="View our location on Google Maps"
                 onClick={() => window.open('https://maps.app.goo.gl/81Hc2BMwnnFuB28A9', '_blank')}
                 className="flex items-start space-x-3 hover:text-cream transition-colors duration-300"
               >

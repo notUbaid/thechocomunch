@@ -102,7 +102,7 @@ const WorkshopsSection = () => {
           <div className="relative rounded-3xl overflow-hidden shadow-luxury max-w-4xl mx-auto">
             <img 
               src={workshopImage}
-              alt="Baking workshop in progress"
+              alt="Hands-on baking workshop classes in Surat"
               className="w-full h-64 md:h-80 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/50 to-transparent flex items-end">

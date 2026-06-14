@@ -47,9 +47,9 @@ const Navigation = () => {
               alt="The Choco Munch"
               className="w-10 h-10 rounded-full shadow-sm"
             />
-            <h1 className={`font-script text-2xl font-bold transition-colors ${isScrolled ? 'text-primary' : 'text-foreground'}`}>
+            <span className={`font-script text-2xl font-bold transition-colors ${isScrolled ? 'text-primary' : 'text-foreground'}`}>
               The Choco Munch
-            </h1>
+            </span>
           </div>
 
           {/* Desktop Menu */}

@@ -28,7 +28,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
-          alt="Premium artisan chocolate cake"
+          alt="Premium artisan custom chocolate cake in Surat"
           className="w-full h-full object-cover object-right md:object-center"
         />
         {/* Soft, dark gradient fading from left to right */}

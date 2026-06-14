@@ -38,7 +38,7 @@ const AboutSection = () => {
               {/* Fallback image if the original is missing, but using the original path */}
               <img 
                 src={kehkashanPortrait}
-                alt="Kehkashan Khan - Founder of The Choco Munch"
+                alt="Kehkashan Khan - Founder of The Choco Munch bakery in Surat"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 border-4 border-accent/20 rounded-2xl pointer-events-none"></div>

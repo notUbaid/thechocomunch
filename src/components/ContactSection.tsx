@@ -134,6 +134,7 @@ const ContactSection = () => {
               Tanvir Arcade, Surat, Gujarat
             </p>
             <button
+              aria-label="View Tanvir Arcade on Google Maps"
               onClick={() => window.open('https://maps.app.goo.gl/81Hc2BMwnnFuB28A9', '_blank')}
               className="btn-cream inline-flex items-center gap-2"
             >
