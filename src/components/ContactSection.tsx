@@ -131,8 +131,7 @@ const ContactSection = () => {
               Visit Our Kitchen
             </h4>
             <p className="text-chocolate-medium font-poppins mb-4">
-              Home-based premium bakery in Surat, Gujarat<br />
-              (Exact address shared upon booking)
+              Tanvir Arcade, Surat, Gujarat
             </p>
             <button
               onClick={() => window.open('https://maps.app.goo.gl/81Hc2BMwnnFuB28A9', '_blank')}

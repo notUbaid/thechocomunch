@@ -90,12 +90,12 @@ const Footer = () => {
             <h4 className="font-poppins font-semibold text-lg mb-6">Get in Touch</h4>
             <div className="space-y-4">
               <button 
-                onClick={() => window.open('https://maps.google.com/maps?q=Royal+Heritage,+Surat,+Gujarat,+India', '_blank')}
+                onClick={() => window.open('https://maps.app.goo.gl/81Hc2BMwnnFuB28A9', '_blank')}
                 className="flex items-start space-x-3 hover:text-cream transition-colors duration-300"
               >
                 <MapPin className="w-5 h-5 text-cream/80 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-cream/80 font-poppins text-sm">Royal Heritage, Surat</p>
+                  <p className="text-cream/80 font-poppins text-sm">Tanvir Arcade, Surat</p>
                   <p className="text-cream/60 font-poppins text-xs">(Click to view on Google Maps)</p>
                 </div>
               </button>
