@@ -82,13 +82,13 @@ const WorkshopsSection = () => {
               </h3>
             </div>
             <p className="text-lg font-poppins text-chocolate-medium mb-4">
-              <span className="font-bold">16 July 2025</span>
+              <span className="font-bold">TBA</span>
             </p>
             <p className="text-chocolate-dark font-poppins mb-6">
               Join a hands-on workshop to master sandwich breads, buns, pizza bases, loaves, croissants, and more!
             </p>
             <button
-              onClick={() => openWhatsApp("Hi! I'm interested in the 1-day workshop on 16 July, 2025.")}
+              onClick={() => openWhatsApp("Hi! I'm interested in the 1-day workshop. Let me know when the dates are announced!")}
               className="btn-luxury"
             >
               Reserve Your Spot

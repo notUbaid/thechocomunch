@@ -135,7 +135,7 @@ const ContactSection = () => {
               (Exact address shared upon booking)
             </p>
             <button
-              onClick={() => window.open('https://maps.google.com/maps?q=Royal+Heritage,+Surat,+Gujarat,+India', '_blank')}
+              onClick={() => window.open('https://maps.app.goo.gl/81Hc2BMwnnFuB28A9', '_blank')}
               className="btn-cream inline-flex items-center gap-2"
             >
               <MapPin className="w-4 h-4" />
