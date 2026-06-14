@@ -115,6 +115,8 @@ const CustomCakesSection = () => {
                 <img 
                   src={image.src}
                   alt={image.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>

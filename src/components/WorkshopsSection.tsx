@@ -105,6 +105,8 @@ const WorkshopsSection = () => {
             <img 
               src={workshopImage}
               alt="Hands-on baking workshop classes in Ahmedabad"
+              loading="lazy"
+              decoding="async"
               className="w-full h-64 md:h-80 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/50 to-transparent flex items-end">

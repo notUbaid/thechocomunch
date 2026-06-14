@@ -39,6 +39,8 @@ const AboutSection = () => {
               <img 
                 src={kehkashanPortrait}
                 alt="Kehkashan Khan - Founder of The Choco Munch bakery in Ahmedabad"
+                loading="lazy"
+                decoding="async"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 border-4 border-accent/20 rounded-2xl pointer-events-none"></div>
