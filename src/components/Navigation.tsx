@@ -41,7 +41,7 @@ const Navigation = () => {
       <div className="container-max px-6 md:px-12">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('home')}>
+          <a href="#home" className="flex items-center space-x-3 cursor-pointer" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
             <img
               src={logo}
               alt="The Choco Munch"
@@ -50,20 +50,21 @@ const Navigation = () => {
             <span className={`font-script text-2xl font-bold transition-colors ${isScrolled ? 'text-primary' : 'text-foreground'}`}>
               The Choco Munch
             </span>
-          </div>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-10">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                href={`#${item.id}`}
+                onClick={(e) => { e.preventDefault(); scrollToSection(item.id); }}
                 className={`text-sm uppercase tracking-widest transition-colors duration-300 font-medium ${
                   isScrolled ? 'text-foreground/80 hover:text-accent' : 'text-foreground hover:text-accent'
                 }`}
               >
                 {item.label}
-              </button>
+              </a>
             ))}
           </div>
 
@@ -85,13 +86,14 @@ const Navigation = () => {
         <div className={`md:hidden absolute top-full left-0 w-full bg-background/98 backdrop-blur-xl shadow-luxury transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-[500px] border-b border-border/50' : 'max-h-0'}`}>
           <div className="px-6 py-6 flex flex-col space-y-4">
             {navItems.map((item) => (
-              <button
+              <a
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                href={`#${item.id}`}
+                onClick={(e) => { e.preventDefault(); scrollToSection(item.id); }}
                 className="text-left text-lg uppercase tracking-wider py-2 text-foreground hover:text-accent transition-colors duration-300 font-medium border-b border-border/30 last:border-0"
               >
                 {item.label}
-              </button>
+              </a>
             ))}
           </div>
         </div>

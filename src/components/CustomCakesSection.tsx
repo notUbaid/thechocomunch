@@ -134,13 +134,15 @@ const CustomCakesSection = () => {
               Let's discuss your vision, preferences, and special requirements. 
               We'll create something truly memorable for your celebration.
             </p>
-            <button
-              onClick={openWhatsApp}
+            <a
+              href="https://wa.me/+919033775880?text=Hi!%20I'd%20like%20to%20inquire%20about%20ordering%20a%20custom%20cake.%20Can%20you%20please%20share%20more%20details%20about%20pricing%20and%20availability?"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-luxury inline-flex items-center gap-3"
             >
               <MessageCircle className="w-5 h-5" />
               Send Cake Inquiry
-            </button>
+            </a>
           </div>
         </div>
 

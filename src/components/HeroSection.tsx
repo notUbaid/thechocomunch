@@ -56,32 +56,37 @@ const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
-            <button
-              onClick={() => openWhatsApp("Hi! I'd love to join your baking workshop.")}
+            <a
+              href="https://wa.me/+919033775880?text=Hi!%20I'd%20love%20to%20join%20your%20baking%20workshop."
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-luxury inline-flex justify-center items-center"
             >
               Join a Workshop
-            </button>
+            </a>
             
-            <button
-              onClick={() => openWhatsApp("Hi! I'd like to order a custom cake.")}
+            <a
+              href="https://wa.me/+919033775880?text=Hi!%20I'd%20like%20to%20order%20a%20custom%20cake."
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-cream inline-flex justify-center items-center"
             >
               Order a Cake
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
       {/* Elegant minimalist scroll indicator */}
       <div className="absolute bottom-10 left-6 md:left-12 opacity-70 hover:opacity-100 transition-opacity">
-        <button
-          onClick={() => scrollToSection('about')}
-          className="flex flex-col items-center gap-3 text-foreground"
+        <a
+          href="#about"
+          onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
+          className="flex flex-col items-center gap-3 text-foreground hover:text-foreground/80 transition-colors"
         >
           <span className="text-[10px] uppercase tracking-widest rotate-90 mb-6">Scroll</span>
           <ChevronDown className="w-4 h-4 animate-bounce" />
-        </button>
+        </a>
       </div>
     </section>
   );

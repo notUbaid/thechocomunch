@@ -53,20 +53,24 @@ const Footer = () => {
             </p>
 
             <div className="flex items-center space-x-4">
-              <button
+              <a
                 aria-label="Visit our Instagram page"
-                onClick={() => window.open('https://instagram.com/thechocomunch', '_blank')}
+                href="https://instagram.com/thechocomunch"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
               >
                 <Instagram className="w-5 h-5" />
-              </button>
-              <button
+              </a>
+              <a
                 aria-label="Contact us on WhatsApp"
-                onClick={openWhatsApp}
+                href="https://wa.me/+919033775880?text=Hi!%20I'd%20love%20to%20know%20more%20about%20The%20Choco%20Munch."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
               >
                 <Phone className="w-5 h-5" />
-              </button>
+              </a>
             </div>
           </div>
 
@@ -76,12 +80,13 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <button
-                    onClick={() => scrollToSection(link.sectionId)}
+                  <a
+                    href={`#${link.sectionId}`}
+                    onClick={(e) => { e.preventDefault(); scrollToSection(link.sectionId); }}
                     className="text-cream/80 hover:text-cream transition-colors duration-300 font-poppins"
                   >
                     {link.label}
-                  </button>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -91,9 +96,11 @@ const Footer = () => {
           <div>
             <h4 className="font-poppins font-semibold text-lg mb-6">Get in Touch</h4>
             <div className="space-y-4">
-              <button 
+              <a 
                 aria-label="View our location on Google Maps"
-                onClick={() => window.open('https://maps.app.goo.gl/81Hc2BMwnnFuB28A9', '_blank')}
+                href="https://maps.app.goo.gl/81Hc2BMwnnFuB28A9"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-start space-x-3 hover:text-cream transition-colors duration-300"
               >
                 <MapPin className="w-5 h-5 text-cream/80 mt-0.5 flex-shrink-0" />
@@ -101,7 +108,7 @@ const Footer = () => {
                   <p className="text-cream/80 font-poppins text-sm">Tanvir Arcade, Surat</p>
                   <p className="text-cream/60 font-poppins text-xs">(Click to view on Google Maps)</p>
                 </div>
-              </button>
+              </a>
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-cream/80 flex-shrink-0" />
@@ -118,13 +125,15 @@ const Footer = () => {
               </div>
             </div>
 
-            <button
-              onClick={openWhatsApp}
-              className="mt-6 bg-cream/10 hover:bg-cream/20 text-cream px-6 py-3 rounded-full font-poppins font-medium transition-colors duration-300 flex items-center space-x-2"
+            <a
+              href="https://wa.me/+919033775880?text=Hi!%20I'd%20love%20to%20know%20more%20about%20The%20Choco%20Munch."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 bg-cream/10 hover:bg-cream/20 text-cream px-6 py-3 rounded-full font-poppins font-medium transition-colors duration-300 inline-flex items-center space-x-2 w-fit"
             >
               <Phone className="w-4 h-4" />
               <span>WhatsApp Us</span>
-            </button>
+            </a>
           </div>
         </div>
 

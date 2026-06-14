@@ -87,12 +87,14 @@ const WorkshopsSection = () => {
             <p className="text-chocolate-dark font-poppins mb-6">
               Join a hands-on workshop to master sandwich breads, buns, pizza bases, loaves, croissants, and more!
             </p>
-            <button
-              onClick={() => openWhatsApp("Hi! I'm interested in the 1-day workshop. Let me know when the dates are announced!")}
-              className="btn-luxury"
+            <a
+              href="https://wa.me/+919033775880?text=Hi!%20I'm%20interested%20in%20the%201-day%20workshop.%20Let%20me%20know%20when%20the%20dates%20are%20announced!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-luxury inline-block"
             >
               Reserve Your Spot
-            </button>
+            </a>
           </div>
         </div>
 

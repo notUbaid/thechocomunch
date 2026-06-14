@@ -55,21 +55,21 @@ const ContactSection = () => {
       icon: MessageCircle,
       title: "WhatsApp",
       description: "Quick response guaranteed",
-      action: () => openWhatsApp(),
+      href: "https://wa.me/+919033775880?text=Hi!%20I'd%20love%20to%20join%20your%20baking%20class.",
       color: "bg-green-500"
     },
     {
       icon: Phone,
       title: "Call Us",
       description: "+91 90337 75880",
-      action: () => window.open("tel:+919033775880"),
+      href: "tel:+919033775880",
       color: "bg-blue-500"
     },
     {
       icon: Mail,
       title: "Email",
       description: "thechocomunch@gmail.com",
-      action: () => window.open("mailto:thechocomunch@gmail.com"),
+      href: "mailto:thechocomunch@gmail.com",
       color: "bg-purple-500"
     }
   ];
@@ -98,13 +98,15 @@ const ContactSection = () => {
             {/* Quick Contact Options */}
             <div className="space-y-6">
               {contactOptions.map((option, index) => (
-                <div 
+                <a 
                   key={option.title}
+                  href={option.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`flex items-center p-4 rounded-2xl bg-card hover-lift cursor-pointer border border-border/50 transition-all duration-1000 ${
                     isVisible ? 'animate-scale-in' : 'opacity-0'
                   }`}
                   style={{ animationDelay: `${0.4 + index * 0.1}s` }}
-                  onClick={option.action}
                 >
                   <div className={`w-12 h-12 ${option.color} rounded-full flex items-center justify-center mr-4 shadow-soft`}>
                     <option.icon className="w-6 h-6 text-white" />
@@ -117,7 +119,7 @@ const ContactSection = () => {
                       {option.description}
                     </p>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>
@@ -133,14 +135,16 @@ const ContactSection = () => {
             <p className="text-chocolate-medium font-poppins mb-4">
               Tanvir Arcade, Surat, Gujarat
             </p>
-            <button
+            <a
               aria-label="View Tanvir Arcade on Google Maps"
-              onClick={() => window.open('https://maps.app.goo.gl/81Hc2BMwnnFuB28A9', '_blank')}
+              href="https://maps.app.goo.gl/81Hc2BMwnnFuB28A9"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-cream inline-flex items-center gap-2"
             >
               <MapPin className="w-4 h-4" />
               View on Google Maps
-            </button>
+            </a>
           </div>
         </div>
       </div>
