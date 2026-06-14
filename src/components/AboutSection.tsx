@@ -25,7 +25,7 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-32 px-6 md:px-12 bg-background relative overflow-hidden">
+    <section id="about" ref={sectionRef} className="py-16 md:py-32 px-6 md:px-12 bg-background relative overflow-hidden">
       {/* Decorative background element */}
       <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/30 rounded-l-full -z-10 blur-3xl opacity-50"></div>
 
@@ -38,7 +38,7 @@ const AboutSection = () => {
               {/* Fallback image if the original is missing, but using the original path */}
               <img 
                 src={kehkashanPortrait}
-                alt="Kehkashan Khan - Founder of The Choco Munch bakery in Surat"
+                alt="Kehkashan Khan - Founder of The Choco Munch bakery in Ahmedabad"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
               <div className="absolute inset-0 border-4 border-accent/20 rounded-2xl pointer-events-none"></div>

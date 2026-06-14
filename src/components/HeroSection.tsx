@@ -28,7 +28,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img 
           src={heroImage} 
-          alt="Premium artisan custom chocolate cake in Surat"
+          alt="Premium artisan custom chocolate cake in Ahmedabad"
           className="w-full h-full object-cover object-right md:object-center"
         />
         {/* Soft, dark gradient fading from left to right */}
@@ -43,11 +43,11 @@ const HeroSection = () => {
             <span className="text-accent uppercase tracking-[0.2em] text-sm font-semibold">Home Bakery</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-4 leading-[1.1] tracking-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-foreground mb-4 leading-[1.1] tracking-tight">
             The Choco Munch
           </h1>
           
-          <p className="text-2xl md:text-3xl text-chocolate-medium font-script mb-8">
+          <p className="text-xl md:text-3xl text-chocolate-medium font-script mb-8">
             Whisked with Passion, Baked with Heart
           </p>
           
@@ -60,7 +60,7 @@ const HeroSection = () => {
               href="https://wa.me/+919033775880?text=Hi!%20I'd%20love%20to%20join%20your%20baking%20workshop."
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-luxury inline-flex justify-center items-center"
+              className="btn-luxury inline-flex justify-center items-center w-full sm:w-auto"
             >
               Join a Workshop
             </a>
@@ -69,7 +69,7 @@ const HeroSection = () => {
               href="https://wa.me/+919033775880?text=Hi!%20I'd%20like%20to%20order%20a%20custom%20cake."
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-cream inline-flex justify-center items-center"
+              className="btn-cream inline-flex justify-center items-center w-full sm:w-auto"
             >
               Order a Cake
             </a>

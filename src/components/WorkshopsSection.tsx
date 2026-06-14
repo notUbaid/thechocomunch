@@ -63,7 +63,7 @@ const WorkshopsSection = () => {
       <div className="container-max">
         {/* Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="font-script text-5xl md:text-6xl font-bold text-chocolate-dark mb-6">
+          <h2 className="font-script text-4xl md:text-6xl font-bold text-chocolate-dark mb-6">
             Learn to Bake Like a Pro
           </h2>
           <p className="text-xl text-chocolate-medium max-w-3xl mx-auto font-poppins leading-relaxed">
@@ -104,7 +104,7 @@ const WorkshopsSection = () => {
           <div className="relative rounded-3xl overflow-hidden shadow-luxury max-w-4xl mx-auto">
             <img 
               src={workshopImage}
-              alt="Hands-on baking workshop classes in Surat"
+              alt="Hands-on baking workshop classes in Ahmedabad"
               className="w-full h-64 md:h-80 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-chocolate-dark/50 to-transparent flex items-end">

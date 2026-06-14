@@ -63,7 +63,7 @@ const CustomCakesSection = () => {
       <div className="container-max">
         {/* Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="font-script text-5xl md:text-6xl font-bold text-chocolate-dark mb-6">
+          <h2 className="font-script text-4xl md:text-6xl font-bold text-chocolate-dark mb-6">
             Custom Cake Orders
           </h2>
           <div className="max-w-3xl mx-auto">
@@ -138,7 +138,7 @@ const CustomCakesSection = () => {
               href="https://wa.me/+919033775880?text=Hi!%20I'd%20like%20to%20inquire%20about%20ordering%20a%20custom%20cake.%20Can%20you%20please%20share%20more%20details%20about%20pricing%20and%20availability?"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-luxury inline-flex items-center gap-3"
+              className="btn-luxury inline-flex items-center justify-center gap-3 w-full sm:w-auto"
             >
               <MessageCircle className="w-5 h-5" />
               Send Cake Inquiry

@@ -105,7 +105,7 @@ const GallerySection = () => {
       <div className="container-max">
         {/* Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="font-script text-5xl md:text-6xl font-bold text-chocolate-dark mb-6">
+          <h2 className="font-script text-4xl md:text-6xl font-bold text-chocolate-dark mb-6">
             Our Creations
           </h2>
           <p className="text-xl text-chocolate-medium max-w-3xl mx-auto font-poppins leading-relaxed">

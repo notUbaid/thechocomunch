@@ -32,7 +32,7 @@ const Footer = () => {
     <footer className="bg-gradient-primary text-cream">
       <div className="container-max">
         {/* Main Footer Content */}
-        <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="py-12 md:py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8">
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
@@ -58,18 +58,18 @@ const Footer = () => {
                 href="https://instagram.com/thechocomunch"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
+                className="w-12 h-12 md:w-10 md:h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-6 h-6 md:w-5 md:h-5" />
               </a>
               <a
                 aria-label="Contact us on WhatsApp"
                 href="https://wa.me/+919033775880?text=Hi!%20I'd%20love%20to%20know%20more%20about%20The%20Choco%20Munch."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
+                className="w-12 h-12 md:w-10 md:h-10 bg-cream/10 hover:bg-cream/20 rounded-full flex items-center justify-center transition-colors duration-300"
               >
-                <Phone className="w-5 h-5" />
+                <Phone className="w-6 h-6 md:w-5 md:h-5" />
               </a>
             </div>
           </div>
@@ -105,7 +105,7 @@ const Footer = () => {
               >
                 <MapPin className="w-5 h-5 text-cream/80 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-cream/80 font-poppins text-sm">Tanvir Arcade, Surat</p>
+                  <p className="text-cream/80 font-poppins text-sm">Tanvir Arcade, Ahmedabad</p>
                   <p className="text-cream/60 font-poppins text-xs">(Click to view on Google Maps)</p>
                 </div>
               </a>

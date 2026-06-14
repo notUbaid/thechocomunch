@@ -79,7 +79,7 @@ const ContactSection = () => {
       <div className="container-max">
         {/* Header */}
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="font-script text-5xl md:text-6xl font-bold text-chocolate-dark mb-6">
+          <h2 className="font-script text-4xl md:text-6xl font-bold text-chocolate-dark mb-6">
             Have Questions or Want to Join?
           </h2>
           <p className="text-xl text-chocolate-medium max-w-3xl mx-auto font-poppins leading-relaxed">
@@ -133,14 +133,14 @@ const ContactSection = () => {
               Visit Our Kitchen
             </h4>
             <p className="text-chocolate-medium font-poppins mb-4">
-              Tanvir Arcade, Surat, Gujarat
+              Tanvir Arcade, Ahmedabad, Gujarat
             </p>
             <a
               aria-label="View Tanvir Arcade on Google Maps"
               href="https://maps.app.goo.gl/81Hc2BMwnnFuB28A9"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-cream inline-flex items-center gap-2"
+              className="btn-cream inline-flex items-center justify-center gap-2 w-full sm:w-auto"
             >
               <MapPin className="w-4 h-4" />
               View on Google Maps
